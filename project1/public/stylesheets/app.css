@@ -48,6 +48,9 @@ body {
 .logo {
     /* here by giving height value directly we are giving width value to set by the browser automatically */
     height: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
 
 .text-box {
@@ -61,6 +64,7 @@ body {
 .heading-primary {
     color: #ffffff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -107,6 +111,9 @@ Note: The !important rule is ignored in a keyframe (See last example on this pag
 
  */
 
+
+/* synatx @keyframes and animation name */
+
 @keyframes moveInLeft {
     /* animations starts at 0% */
     0% {
@@ -122,7 +129,7 @@ Note: The !important rule is ignored in a keyframe (See last example on this pag
     100% {
         /* inside we are writing wat will happen when animation is 100% */
         opacity: 1;
-        transform: translateX(0px);
+        transform: translatey(0px);
     }
 }
 
@@ -130,9 +137,12 @@ Note: The !important rule is ignored in a keyframe (See last example on this pag
     0% {
         /* inside we are writing wat will happen when animation is 0% */
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(100px);
     }
     /* animation finishes at 100% */
+    80% {
+        transform: translateX(-10px);
+    }
     100% {
         opacity: 1;
         transform: translateX(0px);
