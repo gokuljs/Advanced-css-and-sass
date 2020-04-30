@@ -69,7 +69,12 @@ body {
     font-weight: 400;
     letter-spacing: 35px;
     animation-name: moveInLeft;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    /* animation-timing-function tells us that how animation should progress during each cycle  */
+    /* animation-iteration-count: ; */
+    /* animation-delay: 0.5s; */
+    /* this means that animations starts after 3seconds */
 }
 
 .heading-primary-sub {
@@ -79,6 +84,7 @@ body {
     letter-spacing: 17px;
     animation-name: moveInRight;
     animation-duration: 3s;
+    /* animation-delay: 1s; */
 }
 
 
@@ -108,8 +114,13 @@ Note: The !important rule is ignored in a keyframe (See last example on this pag
         opacity: 0;
         transform: translateX(-100px);
     }
+    80% {
+        /* inside we are writing wat will happen when animation is 80% */
+        transform: translateX(10px);
+    }
     /* animation finishes at 100% */
     100% {
+        /* inside we are writing wat will happen when animation is 100% */
         opacity: 1;
         transform: translateX(0px);
     }
