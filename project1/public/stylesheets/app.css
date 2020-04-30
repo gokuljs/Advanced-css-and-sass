@@ -16,3 +16,26 @@ medium-green : #28b485
     /* The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now!
  */
 }
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    /* wat 95vh tells us that view port height (vh) should be 95% at any point of time */
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.459), rgba(68, 141, 113, 0.65)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    /* will go in clockwise direction  */
+    /* clip-path: polygon(xy ,xy ,xy); */
+    /* clip-path: polygon(1% 1%, 99% 1%, 100% 65%, 0% 99%); */
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+
+.logo-box {}
