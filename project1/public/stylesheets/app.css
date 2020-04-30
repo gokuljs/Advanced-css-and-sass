@@ -36,6 +36,94 @@ body {
     /* clip-path: polygon(xy ,xy ,xy); */
     /* clip-path: polygon(1% 1%, 99% 1%, 100% 65%, 0% 99%); */
     clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+    position: relative;
 }
 
-.logo-box {}
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    /* here by giving height value directly we are giving width value to set by the browser automatically */
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* when we does absolute positioning its starts measuring from the center of the text-box  */
+}
+
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17px;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+
+/* creating animations  */
+
+
+/* The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from one set of CSS styles to another.
+
+During the animation, you can change the set of CSS styles many times.
+
+Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+
+Tip: For best browser support, you should always define both the 0% and the 100% selectors.
+
+Note: Use the animation properties to control the appearance of the animation, and also to bind the animation to selectors.
+
+Note: The !important rule is ignored in a keyframe (See last example on this page).
+
+ */
+
+@keyframes moveInLeft {
+    /* animations starts at 0% */
+    0% {
+        /* inside we are writing wat will happen when animation is 0% */
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    /* animation finishes at 100% */
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        /* inside we are writing wat will happen when animation is 0% */
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    /* animation finishes at 100% */
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
