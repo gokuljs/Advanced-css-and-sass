@@ -1,0 +1,18 @@
+/* 
+colors 
+light-green : #7ed56f
+dark-green : #55c57a
+medium-green : #28b485
+
+ */
+
+
+/* universal selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now!
+ */
+}
