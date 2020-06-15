@@ -3,7 +3,7 @@ var express = require("express"),
 
 //app config 
 app.use(express.static(__dirname + '/public'));
-console.log(__dirname)
+console.log(__dirname) // gives the dir name which the project is currently working on 
 app.set('view engine', 'ejs');
 
 
