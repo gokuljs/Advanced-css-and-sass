@@ -43,24 +43,65 @@ body {
     height: 35px;
 }
 
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .heading-primary {
     color: #ffffff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
     /* span elelment is by default an display property so its an inline elelment  so use block property*/
     display: block;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    letter-spacing: 20px;
-    font-size: 20px;
+    font-size: 60px;
+    font-weight: 400px;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
     display: block;
-    position: absolute;
-    top: 45%;
-    left: 40%;
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 17px;
+    animation-name: moveinright;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: 3; tells how many times the animation should repeat */
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    90% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveinright {
+    0% {
+        opacity: 0;
+        transform: translateX(+100px);
+    }
+    90% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
