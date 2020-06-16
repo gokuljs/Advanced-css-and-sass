@@ -43,6 +43,10 @@ body {
     height: 35px;
 }
 
+.logo:hover {
+    animation: moveinright 1s ease-out;
+}
+
 .text-box {
     position: absolute;
     top: 40%;
@@ -54,6 +58,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    /* is used remove the default error caused during animation  */
 }
 
 .heading-primary-main {
@@ -63,7 +68,7 @@ body {
     font-weight: 400px;
     letter-spacing: 35px;
     animation-name: moveInLeft;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
@@ -73,7 +78,7 @@ body {
     font-weight: 700px;
     letter-spacing: 17px;
     animation-name: moveinright;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3; tells how many times the animation should repeat */
 }
@@ -105,3 +110,26 @@ body {
         transform: translateX(0px);
     }
 }
+
+
+/* .btn:link, */
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 40px;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+/*  
+    psuedo classes are special classes of a selector 
+    where button is the one of the sudo classes which is similiar hover element
+    so here link is an howver element for btn 
+    
+    */
