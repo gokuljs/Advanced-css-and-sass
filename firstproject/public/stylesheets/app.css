@@ -119,6 +119,12 @@ body {
 
 /* link sets ur defaut color  */
 
+
+/* button part  */
+
+
+/* ====================================================================== */
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -206,3 +212,6 @@ active works  hold ur mouse on it
     animation: moveinbutton 3s ease-out .35s;
     animation-fill-mode: backwards;
 }
+
+
+/* =========================================================================== */
