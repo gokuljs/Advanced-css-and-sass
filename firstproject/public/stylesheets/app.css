@@ -204,7 +204,7 @@ active works  hold ur mouse on it
     }
     100% {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -215,3 +215,8 @@ active works  hold ur mouse on it
 
 
 /* =========================================================================== */
+
+
+/* 
+both document object model and cssom(css object model) both together form the render tree which loads the webpage finally
+*/
