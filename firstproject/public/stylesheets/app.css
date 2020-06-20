@@ -7,10 +7,13 @@ dark green: #28b485
 
 *,
 *::after,
-*::before {
+::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* margin: 0px;
+    padding: 0px;
+    box-sizing:border-box; */
 }
 
 
