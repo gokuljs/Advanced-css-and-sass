@@ -3,15 +3,9 @@
     padding: 0;
 }
 
-// declaring a variable in sass 
-$color-primary:#f9ed69; // yellow color
-$color-secondary:#f08a5d;
-$color-teritory:#b83b5e;
-$color-text-dark:#333;
-$width-button:150px;
 nav {
     padding: 3rem;
-    background-color: $color-primary;
+    background-color: #f9ed69;
 }
 
 .clearfix::after {
@@ -22,20 +16,21 @@ nav {
 
 .navigation {
     list-style: none;
-    // float:left;
-    li {
-        // display:inline-block;
-        margin-left: 30px;
-        float: left;
-        &:first-child {
-            margin: 0px;
-        }
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-text-dark;
-        }
-    }
+}
+
+.navigation li {
+    margin-left: 30px;
+    float: left;
+}
+
+.navigation li:first-child {
+    margin: 0px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
 }
 
 .button {
@@ -50,5 +45,25 @@ nav {
     border-radius: 100px;
     text-decoration: none;
     text-transform: uppercase;
-    width: $width-button;
+    width: 150px;
+}
+
+.btn-main:link {
+    background-color: #f08a5d;
+}
+
+.btn-main:hover {
+    background-color: #ea5717;
+}
+
+.btn-hot {
+    color: black;
+}
+
+.btn-hot:link {
+    background-color: #b83b5e;
+}
+
+.btn-hot:hover {
+    background-color: #7e2840;
 }
