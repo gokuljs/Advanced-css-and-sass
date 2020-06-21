@@ -5,7 +5,7 @@ var express = require("express"),
 app.use(express.static(__dirname + '/public'));
 console.log(__dirname) // gives the dir name which the project is currently working on 
 app.set('view engine', 'ejs');
-
+// in package.json scripts is the place which is used to write our own scripts 
 
 // routes
 app.get("/", function(req, res) {
