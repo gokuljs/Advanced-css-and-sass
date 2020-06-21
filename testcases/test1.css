@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// declaring a variable in sass 
+$color-primary:#f9ed69; // yellow color
+$color-secondary:#f08a5d;
+$color-teritory:#b83b5e;
+$color-text-dark:#333;
+$width-button:150px;
+nav {
+    padding: 3rem;
+    background-color: $color-primary;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navigation {
+    list-style: none;
+    // float:left;
+    li {
+        // display:inline-block;
+        margin-left: 30px;
+        float: left;
+        &:first-child {
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-text-dark;
+        }
+    }
+}
+
+.button {
+    float: right;
+}
+
+.btn-main:link,
+.btn-hot:link {
+    padding: 10px;
+    dispaly: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: $width-button;
+}
