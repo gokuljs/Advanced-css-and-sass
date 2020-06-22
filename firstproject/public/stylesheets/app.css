@@ -49,24 +49,20 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__logo:hover {
-  animation: moveinright .1s ease-out; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__logo:hover {
+    animation: moveinright .1s ease-out; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: #ffffff;
