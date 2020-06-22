@@ -8,7 +8,10 @@ dark green: #28b485
 // intializing variables in sass
 $color-primary:#55c57a;
 $color-primary-dark:#28b485;
+$color-orange:orange;
 $color-primary-light:#7ed56f;
+$color-grey-dark: #777;
+$color-white:#fff;
 *,
 *::after,
  ::before {
@@ -45,7 +48,7 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     /* padding: 30px; */
     padding: 3rem;
 }
@@ -55,7 +58,7 @@ body {
     /* 
      above line tells us that at every point the height of this box should be 95%
      */
-    background-image: linear-gradient( to right top, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/hero.jpg");
+    background-image: linear-gradient( to right top, rgba($color-primary-light, 0.8), rgba($color-orange, 0.6)), url("../img/hero.jpg");
     background-size: cover;
     /* what cover does is it will adjust according to his height and wwidth of the hreader file  */
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
