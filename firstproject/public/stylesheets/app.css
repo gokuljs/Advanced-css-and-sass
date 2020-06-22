@@ -109,65 +109,62 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-/* .btn:link, */
+/* &:link, */
 /* link sets ur defaut color  */
 /* button part  */
 /* ====================================================================== */
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.2rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative;
-  font-size: 1.6rem; }
-
-/* btn white is only playing a major role in coloring ur elements  */
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-
-/* hover works when ur mouse pointer goes above the word  */
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-/*
+.btn {
+  /* btn white is only playing a major role in coloring ur elements  */
+  /* hover works when ur mouse pointer goes above the word  */
+  /*
  active works  hold ur mouse on it 
  
   */
-.btn:active {
-  transform: translateY(-0.1rem);
-  /* background-color: black; */
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
-
-/*  
+  /*  
      psuedo classes are special classes f a selector 
      where button is the one of the sudo classes which is similiar hover element
      so here link is an howver element for btn0 
      
      */
-/* after psuedo elelments  */
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
+  /* after psuedo elelments  */ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem; }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-0.1rem);
+    /* background-color: black; */
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .btn--white::after {
+    background-color: #fff; }
+  .btn--animated {
+    animation: moveinbutton 3s ease-out .35s;
+    animation-fill-mode: backwards; }
 
 @keyframes moveinbutton {
   0% {
@@ -176,10 +173,6 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
-.btn--animated {
-  animation: moveinbutton 3s ease-out .35s;
-  animation-fill-mode: backwards; }
 
 /* =========================================================================== */
 /* 
