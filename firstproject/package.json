@@ -4,7 +4,7 @@
     "description": "getting started with advanced css ",
     "main": "app.js",
     "scripts": {
-        "compile:sass": "node-sass public/sass/main.scss  public/stylesheets/app.css"
+        "compile:sass": "node-sass public/sass/main.scss  public/stylesheets/app.css -w"
     },
     "author": "gokul js",
     "license": "ISC",
